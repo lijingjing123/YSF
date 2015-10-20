@@ -1,0 +1,63 @@
+<section class="order-list">
+    <div class="inner-order-list">
+        <!-- #include file = "/Inc/section_title.htm" -->
+        <div class="order-content">
+            <dl>
+                <dt class="order-content-title">
+                    <table>
+                        <tr>
+                            <td class="order-title-col-1">下单人</td>
+                            <td class="order-title-col-2">商品类型</td>
+                            <td class="order-title-col-3">商品要求</td>
+                            <td class="order-title-col-4">收货地址</td>
+                            <td class="order-title-col-5">商品价格</td>
+                            <td class="order-title-col-6">订单时间</td>
+                        </tr>
+                    </table>
+                </dt>
+                <dd class="order-content-list" id="orderList">
+                    <div id="orderList1">
+                        <table>
+                            <tbody>
+                                <!--# 循环体 -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!--/ 循环体 -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                                <!-- #include file = "/Inc/order_item.htm" -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="orderList2"></div>
+                   <script>
+                            var speed = 50;
+                            orderList2.innerHTML = orderList1.innerHTML;
+
+                            var position = orderList2.offsetTop - orderList.scrollTop-orderList1.offsetHeight;
+
+                            function Marquee() {
+                                if (orderList2.offsetTop - orderList.scrollTop <= position)
+                                    orderList.scrollTop -= orderList1.offsetHeight;
+                                else {
+                                    orderList.scrollTop++;
+                                }
+                            }
+                            var MyMar = setInterval(Marquee, speed);
+                            orderList.onmouseover = function() {
+                                clearInterval(MyMar);
+                            }
+                            orderList.onmouseout = function() {
+                                MyMar = setInterval(Marquee, speed);
+                            }
+                            </script>
+        </dd>
+        </dl>
+    </div>
+    </div>
+</section>

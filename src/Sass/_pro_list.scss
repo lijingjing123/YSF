@@ -1,0 +1,85 @@
+  .pro-list{
+    @at-root .inner-pro-list{
+      @include totalcenter;
+      min-width:$totalwidth;
+      padding-top:20px;
+      position:relative;
+      @at-root .section-title{
+        h3{        
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 58px;
+          a{
+            color:#333;
+          }
+          a:hover{
+            color:$linkcolor;
+          }
+        }
+      }
+      @at-root .pro-content{
+          font-size: 0;
+          margin-left:-14px;
+          @at-root .pro-item{
+            @include figure-size(4,372px);
+            @include inline-block;
+            vertical-align: top;
+            position:relative;
+            background:nth($backcolor,2);
+            margin-bottom: 14px;
+            cursor: pointer;
+            button{
+              font-size:12px;
+              position: absolute;
+              right:30px;
+              bottom:45px;
+              background:$linkcolor;
+              border-radius:5px;
+              @include line-height(25px);
+              color:#fff;
+              padding: 0 8px;
+              &:hover{
+                 background:darken($linkcolor,10%)
+              }
+            }
+            @at-root .pro-item-title{
+              font-size: 12px;
+              padding-top:280px;
+              padding-left:30px;
+              padding-right:30px;
+              @include text-overflow;
+              a{
+                color:#333;
+              }
+              &:hover,&:hover a{
+                color:$linkcolor;
+              }
+            }
+            @at-root .pro-item-anchor{
+              @include absolute($top:30px);
+              width: 100%;
+              text-align: center;
+              img{
+                height: 200px;
+                width: 250px;
+              }
+            }
+            @at-root .pro-item-price{
+              padding:0 30px 0 35px;
+              font-size: 16px;
+              dt{
+                @include inline-block;
+                color:#666;
+                line-height: 40px;
+              }
+              dd{
+                color: $linkcolor;
+                @include inline-block;
+                line-height: 40px;
+                font-weight: bold;
+              }
+            }
+          }
+      }
+    }
+  }

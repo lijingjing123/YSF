@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>商品列表</title>
+    <meta name="keywords" content="印刷,电子商务,在线印刷,广告印刷,印刷模板">
+    <!--关键词,5个左右,单个8汉字以内-->
+    <meta name="description" content="印刷模板">
+    <!--网站描述，字数尽量空制在80个汉字，160个字符以内！-->
+    <link rel="Shortcut Icon" href="/favicon.ico">
+    <link rel="stylesheet" href="../Css/pro_list.css">
+    <!--jquery-->
+    <script src="../Js/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="../Js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="../Js/common.js"></script>
+    <script src="../Js/pro_list.js"></script>
+</head>
+
+<body class="page">
+    <div class="wrap-header">
+        <!--# 这里是topbar-->
+        <!-- #include file = "/Module/topbar.html" -->
+        <!--/ 这里是topbar-->
+        <!--# 这里是头部-->
+        <!-- #include file = "/Module/header.html" -->
+        <!--# 这里是头部-->
+        <!--# 这里是nav-->
+        <!-- #include file = "/Module/nav.html" -->
+        <!--/ 这里是nav-->
+        <!--# 这里是pos-->
+        <!-- #include file = "/Module/pos.html" -->
+        <!--/ 这里是pos-->
+    </div>
+    <div class="wrap-container">
+        <!--# 这里是pro_all-->
+        <!-- #include file = "/Module/pro_all.html" -->
+        <!-- /这里是pro_all-->
+    </div>
+    <div class="wrap-footer">
+        <!--# 这里是advantage-->
+        <!-- #include file = "/Module/advantage.html" -->
+        <!--/ 这里是advantage-->
+        <!--# 这里是help-->
+        <!-- #include file = "/Module/help.html" -->
+        <!--/ 这里是help-->
+        <!--# 这里是footer-->
+        <!-- #include file = "/Module/footer.html" -->
+        <!--/ 这里是footer-->
+    </div>
+</body>
+
+</html>

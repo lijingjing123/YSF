@@ -1,0 +1,62 @@
+.inner-help{
+  @include totalcenter;
+  padding:40px 0;
+  font-size:0;
+  .help-list{
+    overflow: hidden;
+    @include inline-block;
+    border-right:$border;
+    *float: left;
+  }
+  @at-root .help-item{
+    float:left;
+    width:165px;
+    dt{
+      @include font(14px,#424242);
+      margin-bottom:22px;
+    }
+    a{
+      display:block;
+      @include font(12px,#757575);
+      @include line-height(25px);
+    }
+    a:hover{
+      color:$linkcolor;
+    }
+  }
+  @at-root .weixin{
+    @include inline-block;
+    @include font(12px,#757575);
+    text-align:center;
+    margin-left:30px;
+    *float: left;
+  }
+  @at-root .contact{
+    @include inline-block;
+    @include font(12px,#757575);
+    vertical-align: top;
+    margin-left:30px;
+    *float: left;
+    dt{
+      @include line-height;
+    }
+    img{
+      width:25px;
+      height:25px;
+      vertical-align:-2px;
+    }
+    a{
+      font-size:22px;
+      text-decoration: underline;
+      color:$linkcolor;
+      font-weight: normal;
+      &:hover{
+        color:darken($linkcolor,10%);
+      }
+    }
+    dd{
+      @include font(16px,#0099ff);
+      font-weight:bold;
+    }
+  }
+}

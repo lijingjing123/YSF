@@ -1,0 +1,81 @@
+@import "D:/sassCore/base";
+@import "../Sass/setting";
+@import "../Sass/topbar";
+@import "../Sass/header";
+@import "../Sass/nav";
+@import "../Sass/pro_list";
+@import "../Sass/help";
+@import "../Sass/footer";
+@import "../Sass/common";
+@import "../Sass/pos";
+#nav{
+  background:none;
+  border-top:$border;
+}
+.more{
+  top:20px;
+}
+.category-nav .category-title{
+  background:none;
+  color:#333;
+  @include line-height(79px);
+}
+.nav-list a{
+  @include line-height(78px);
+}
+.category-nav .category-list{
+  border:1px solid $linkcolor;
+}
+.category-nav .category-list{
+  top:79px;
+}
+.category-list-content{
+  top:-1px;
+  height:459.5px;
+}
+.wrap-container{
+  padding-bottom:80px;
+  .pro-all{
+    @include totalcenter;
+    position: relative;
+  }
+.pro-item{
+  height:140px;
+  transition:box-shadow 0.2s linear 0s;
+}
+.pro-item:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.pro-item-anchor img{
+  width:100px;
+  height:80px;
+}
+.pro-item-anchor{
+  text-align: left;
+  width:auto;
+  padding-left:30px;
+}
+.pro-item-title{
+  padding-left:140px;
+  padding-right:20px;
+  padding-top:45px;
+}
+.pro-item-price{
+  padding:0 20px 0 140px;
+}
+  .inner-pro-all.on h3{
+    background:url(../image/title_arrow_check.png) no-repeat left center;
+  }
+  .inner-pro-all.on .pro-content{
+    display:none;
+  }
+  .section-title{
+    border:none;
+    margin-bottom:5px;
+  }
+  h3{
+    font-weight: normal;
+    font-size:20px;
+    line-height:42px;
+  }
+}

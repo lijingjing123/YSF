@@ -1,0 +1,59 @@
+@import "D:/sassCore/base";
+@import "../Sass/setting";
+@import "../Sass/topbar";
+@import "../Sass/header";
+@import "../Sass/nav";
+@import "../Sass/pro_list";
+@import "../Sass/help";
+@import "../Sass/footer";
+@import "../Sass/common";
+@import "../Sass/pos";
+#nav{
+  background:none;
+  border-top:$border;
+}
+.category-nav .category-title{
+  background:none;
+  color:#333;
+  @include line-height(79px);
+}
+.pro-item{
+  transition:box-shadow 0.2s linear 0s;
+}
+.pro-item:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.nav-list a{
+  @include line-height(78px);
+}
+.category-nav .category-list{
+  border:1px solid $linkcolor;
+}
+.category-list-content{
+  top:-1px;
+  height:459.5px;
+}
+
+.category-nav .category-list{
+  top:79px;
+}
+.wrap-container{
+  padding-bottom:80px;
+  .pro-all{
+    @include totalcenter;
+  }
+
+  .section-title{
+    display: none;
+  }
+  h3{
+    font-weight: normal;
+    font-size:20px;
+    line-height:42px;
+  }
+  @at-root .pro-content{
+    font-size:0;
+    margin-right:-4px;
+  
+  }
+}

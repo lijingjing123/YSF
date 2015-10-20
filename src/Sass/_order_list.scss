@@ -1,0 +1,74 @@
+ .order-list{
+  min-width:1226px;
+    @at-root .inner-order-list{
+      
+      @include totalcenter;
+      padding:20px 0 60px 0;
+      @at-root .order-content{
+        background: nth($backcolor,2);
+        padding:20px 40px;
+        table{
+          width: 100%;
+          tbody{
+            @at-root .order-item{
+              height: 30px;
+              td{
+               
+                span{
+                  color: $linkcolor;
+                  padding:0 10px;
+                }
+              }
+              .order-item-col-6{
+                color: #bbb;
+                width:12%;
+              }
+              .order-item-col-1{
+              width:7%;
+              }
+              .order-item-col-2{
+              width:12%;
+              }
+              .order-item-col-3{
+              width:50%;
+              }
+              .order-item-col-4{
+              width:11%;
+              }
+              .order-item-col-5{
+              width:8%;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+.order-content-list{
+  overflow:hidden;
+  height:200px;
+}
+.order-content-title{
+  padding-bottom:10px;
+  tr{
+    @include line-height(30px); 
+  }
+  .order-title-col-1{
+    width:7%;
+  }
+  .order-title-col-2{
+    width:12%;
+  }
+  .order-title-col-3{
+    width:50%;
+    padding-left:12px;
+  }
+  .order-title-col-4{
+    width:11%;
+  }
+  .order-title-col-5{
+    width:8%;
+  }
+}

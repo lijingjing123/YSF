@@ -1,0 +1,21 @@
+#pos{
+  background:#f5f5f5;
+  .inner-pos{
+    @include totalcenter;
+    @include line-height(54px);
+  }
+  p{
+    color:#b0b0b0;
+  }
+  a{
+    @include font(12px,#757575);
+    padding:0 5px;
+  }
+  a:hover{
+    color:#424242;
+  }
+  span{
+    @include font(12px,#ff6700);
+    padding:0 5px;
+  }
+}
